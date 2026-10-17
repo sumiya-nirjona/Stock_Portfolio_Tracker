@@ -1,20 +1,17 @@
-
 # 📈 Smart Stock Portfolio Tracker
 
-A Python-based stock portfolio management application developed as part of the CodeAlpha Python Programming Internship (Task 2).
-
-The application allows users to manage stock quantities, calculate investment values using predefined stock prices, view their portfolio, and export investment reports to CSV files.
+A Python-based stock portfolio management application that allows users to manage stock holdings, calculate investment values using predefined stock prices, view portfolio summaries, and export investment reports to CSV files.
 
 ## ✨ Features
 
 - **Stock Price Listing:** View available stock symbols and their predefined prices.
 - **Add or Update Stocks:** Add stock quantities to your portfolio.
 - **Automatic Quantity Update:** Adding the same stock again increases its existing quantity.
-- **Investment Calculation:** Calculate the total value of each stock holding.
+- **Investment Calculation:** Calculate the value of individual stock holdings and total investment.
 - **Portfolio Summary:** Display stock symbols, quantities, prices, and investment values.
-- **CSV Report Export:** Save portfolio details and total investment to a CSV file.
+- **CSV Report Export:** Export portfolio details and total investment to a CSV file.
 - **Input Validation:** Handle invalid stock symbols and quantities.
-- **Error Handling:** Display an error message if the report cannot be saved.
+- **Error Handling:** Display helpful messages when invalid input is provided or a report cannot be saved.
 - **Menu-Driven Interface:** Navigate through the application using a simple console menu.
 
 ## 🛠️ Technologies Used
@@ -44,14 +41,13 @@ The application allows users to manage stock quantities, calculate investment va
 ## 📂 Project Structure
 
 ```text
-CodeAlpha_Stock_Portfolio_Tracker/
-│
+Python_Stock_Portfolio_Tracker/
 ├── stock_tracker.py
 ├── README.md
 └── portfolio_report.csv
 ```
 
-The `portfolio_report.csv` file is generated when the user saves a portfolio report.
+The `portfolio_report.csv` file is generated when a user saves a portfolio report. It may not exist until the report is generated.
 
 ## 🚀 Getting Started
 
@@ -64,7 +60,7 @@ No external Python packages are required.
 
 ### Installation and Execution
 
-1. Download or clone this repository.
+1. Clone or download this repository.
 2. Open the project folder in VS Code.
 3. Open the integrated terminal.
 4. Run the following command:
@@ -75,7 +71,7 @@ python stock_tracker.py
 
 ## 💻 How to Use
 
-When the application starts, the following menu appears:
+When the application starts, a menu appears:
 
 ```text
 SMART STOCK PORTFOLIO TRACKER
@@ -90,7 +86,7 @@ SMART STOCK PORTFOLIO TRACKER
 - **Option 1:** Display available stocks and prices.
 - **Option 2:** Enter a stock symbol and quantity to add shares.
 - **Option 3:** View the portfolio and total investment value.
-- **Option 4:** Export the portfolio to `portfolio_report.csv`.
+- **Option 4:** Export the current portfolio to `portfolio_report.csv`.
 - **Option 5:** Exit the application.
 
 ## 🧮 Example
@@ -104,7 +100,7 @@ Price per Share: $180.00
 Investment Value: $900.00
 ```
 
-Calculation:
+**Calculation:**
 
 ```text
 Total Investment = Quantity × Price per Share
@@ -129,16 +125,15 @@ The report can be opened using Microsoft Excel, Google Sheets, or other spreadsh
 
 ## ⚠️ Limitations
 
-- Stock prices are predefined and manually maintained.
-- The application does not retrieve live market data.
-- Portfolio data is stored in memory and resets when the application restarts.
-- CSV export saves the current portfolio; it does not automatically restore previously saved data.
+- Stock prices are predefined sample values and are not updated automatically.
+- The application does not retrieve live stock market data.
+- Portfolio data is stored in memory and resets when the program restarts.
+- CSV export saves the current portfolio but does not automatically restore a previously saved portfolio.
 
 ## 🎯 Learning Outcomes
 
-This project demonstrates practical use of Python dictionaries, functions, input validation, basic financial calculations, exception handling, and CSV file operations.
+This project demonstrates practical use of Python dictionaries, functions, input validation, arithmetic operations, exception handling, and CSV file handling.
 
-## 👩‍💻 Internship
+## 👩‍💻 Author
 
-**Program:** CodeAlpha Python Programming Internship  
-**Project:** Task 2 — Stock Portfolio Tracker
+Developed as a personal Python programming project to practice programming fundamentals, data management, and file handling.
